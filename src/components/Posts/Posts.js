@@ -6,7 +6,7 @@ export default function Posts() {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         async function loadPosts() {
-            const response = await fetch('http://localhost/howtolinux/wp-json/wp/v2/posts?_embed');
+            const response = await fetch('http://howtolinux.io.mjurus.smarthost.pl/wp-json/wp/v2/posts?_embed');
             if(!response.ok) {
                 // oups! something went wrong
                 return;
