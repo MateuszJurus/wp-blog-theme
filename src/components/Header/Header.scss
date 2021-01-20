@@ -3,7 +3,9 @@
 .section {
     &--header {
         width: 100%;
-        background: linear-gradient(#3A063C, #B12923)
+        position: relative;
+        background: linear-gradient(#3A063C, #B12923);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 10% 100%, 0 90%);
     }
 
     &__heading {
@@ -11,7 +13,7 @@
         flex-flow: column;
         align-items: center;
         max-width: 700px;
-        padding: $p-xxl 0;
+        padding: $p-xxl;
         margin: 0 auto;
     }
 }
@@ -19,6 +21,16 @@
 .h1 {
     font-size: 58px;
     color: white;
+
+    @media all and (max-width: $br-m) {
+        font-size: 42px;
+    }
+
+    @media all and (max-width: $br-s) {
+        font-size: 32px;
+    }
+
+    
 }
 
 .button {
@@ -38,5 +50,9 @@
     &--white {
         background-color: white;
         color: $col-main;
+    }
+
+    @media all and (max-width: $br-s) {
+        font-size: 16px;
     }
 }
