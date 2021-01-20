@@ -17,6 +17,7 @@ $m-s: 6px;
 $m-m: 10px;
 $m-l: 16px;
 $m-xl: 32px;
+$m-xxl: 48px;
 
 // paddings
 $p-xs: 4px;
@@ -24,9 +25,11 @@ $p-s: 6px;
 $p-m: 10px;
 $p-l: 16px;
 $p-xl: 32px;
+$p-xxl: 48px;
 
 // widths
 $w-gutter: 1320px;
+$w-item4: $w-gutter/4;
 
 // misc
 $transition: .2s;

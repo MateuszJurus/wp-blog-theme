@@ -1,0 +1,42 @@
+@import '../../styles/styles.scss';
+
+.section {
+    &--header {
+        width: 100%;
+        background: linear-gradient(#3A063C, #B12923)
+    }
+
+    &__heading {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        max-width: 700px;
+        padding: $p-xxl 0;
+        margin: 0 auto;
+    }
+}
+
+.h1 {
+    font-size: 58px;
+    color: white;
+}
+
+.button {
+    margin-top: $m-xl;
+    font-size: 32px;
+    width: fit-content;
+    padding: $p-m $p-xl;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    transition: $transition;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &--white {
+        background-color: white;
+        color: $col-main;
+    }
+}

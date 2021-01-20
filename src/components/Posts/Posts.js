@@ -20,10 +20,10 @@ export default function Posts() {
         loadPosts();
    }, [])
   return (
-    <div className="postDisplay">
+    <section className="postDisplay">
         {posts && posts.map((post, i) => (
             <Post data={post} key={i} />
         ))}
-    </div>
+    </section>
  )
 }

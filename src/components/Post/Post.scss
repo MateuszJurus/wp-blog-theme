@@ -7,9 +7,9 @@ a {
 .postcard {
     display: flex;
     flex-flow: column;
-    width: calc(25% - 32px);
-    margin: 16px;
-    padding: 16px;
+    margin: $m-l;
+    padding: $p-l;
+    width: $w-item4 - 2*$m-l;
     border-radius: 15px;
     transition: $transition;
     

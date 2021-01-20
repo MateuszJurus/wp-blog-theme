@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import Header from './components/Header/Header';
 import Posts from './components/Posts/Posts';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header />
     <Posts />
   </React.StrictMode>,
   document.getElementById('root')
