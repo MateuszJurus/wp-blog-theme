@@ -1,0 +1,8 @@
+@import '../../styles/styles.scss';
+
+.postDisplay {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: $w-gutter;
+    margin: 0 auto;
+}

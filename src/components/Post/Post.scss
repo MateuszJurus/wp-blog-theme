@@ -1,0 +1,53 @@
+@import '../../styles/styles.scss';
+
+a {
+    color: $col-headers;
+}
+
+.postcard {
+    display: flex;
+    flex-flow: column;
+    width: calc(25% - 32px);
+    margin: 16px;
+    padding: 16px;
+    border-radius: 15px;
+    transition: $transition;
+    
+    &:hover {
+        box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+    }
+
+    &__image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin-top: $m-m;
+        font-weight: bold;
+        
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
+
+    &__date {
+        margin-top: $m-m;
+        font-size: 14px;
+        color: $col-lgrey;
+        font-weight: bold;
+    }
+
+    &__excerpt {
+        margin-top: $m-m;
+        color: $col-grey;
+        line-height: 1.34;
+    }
+
+    &__tags {
+        margin-top: $m-m;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}

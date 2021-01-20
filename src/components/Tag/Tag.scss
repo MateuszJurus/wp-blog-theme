@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.tag {
+    padding: $p-xs $p-m;
+    margin: $m-xs;
+    color: white;
+    font-size: 12px;
+    border-radius: 15px;
+    transition: $transition;
+
+    &--linux {
+        background-color: $col-linux;
+    }
+    
+    &--html {
+        background-color: $col-html;
+    }
+
+    &--raspberry-pi {
+        background-color: $col-raspberry-pi;
+    }
+
+    &--css {
+        background-color: $col-css;
+    }
+}
